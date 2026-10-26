@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style="color-scheme: light;"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gineva Fashion Jewellery – 1 Gram Gold &amp; Wedding Jewellery, Hyderabad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf3f1;--surface:#fff;--ink:#2a1530;--muted:#6e5a74;--teal:#0e3b43;--gold:#a8700a;--gold-soft:#f0c75e;--blush:#f5d9d6;--line:#e8d5d2;--bad:#b3261e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a0f1e;--surface:#27172c;--ink:#f6e9e6;--muted:#bfa9c4;--teal:#0a2a30;--gold:#e8b24a;--blush:#3a2340;--line:#43294a;--bad:#ff8a80;color-scheme:dark}}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "Work Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bodoni Moda",Georgia,serif;font-weight:500;line-height:1.15;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{font-family:"Bodoni Moda",Georgia,serif;font-size:1.5rem;font-weight:700;text-decoration:none}
+nav a{margin-left:20px;text-decoration:none;opacity:.85;font-weight:500}
+.hero{background:var(--teal);color:#fbf3f1;border-radius:0 0 40px 40px}
+.hero .cols{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding-top:20px;padding-bottom:48px}
+.hero h1{font-size:clamp(2rem,5vw,3.6rem);font-weight:700}
+.hero h1 em{color:var(--gold-soft)}
+.hero p{max-width:46ch;color:#d9e7e8;margin:16px 0 24px}
+.btn{display:inline-block;background:var(--gold-soft);color:#2a1530;padding:12px 22px;border-radius:999px;font:600 1rem "Work Sans",sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn.alt{background:transparent;color:inherit;border:1.5px solid currentColor;margin-left:8px}
+.hero svg{width:100%;height:auto;max-height:340px}
+.sway{transform-origin:200px 40px;animation:sway 4s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotate(-4deg)}to{transform:rotate(4deg)}}
+@media (prefers-reduced-motion:reduce){.sway{animation:none}html{scroll-behavior:auto}}
+section{padding:44px 0}
+h2{font-size:clamp(1.6rem,3.4vw,2.2rem);margin-bottom:6px}
+.sub{color:var(--muted);margin:0 0 22px}
+.albums{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px}
+.album{all:unset;cursor:pointer;display:flex;flex-direction:column;border-radius:18px;overflow:hidden;background:var(--surface);border:1.5px solid var(--line)}
+.album[aria-pressed="true"]{border-color:var(--gold);box-shadow:0 0 0 2px var(--gold)}
+.album:focus-visible{outline:3px solid var(--gold)}
+.album .t{aspect-ratio:1/1}
+body.alb .hero,body.alb #albums,body.alb #why,body.alb #how,body.alb #admin{display:none}
+body:not(.alb) #items{display:none}
+.back{display:inline-block;margin-bottom:14px;font-weight:600;color:var(--gold)}
+.am{gap:10px;margin:0 0 18px;flex-wrap:wrap;align-items:center}.am input{max-width:260px}
+body.own .am{display:flex}
+body:not(.alb) .am{display:none}
+.album b{padding:10px 12px 0;font-family:"Bodoni Moda",Georgia,serif;font-size:1.1rem;font-weight:500}
+.album small{padding:0 12px 10px;color:var(--muted)}
+.t{display:grid;place-items:center;overflow:hidden}
+.t img{width:100%;height:100%;object-fit:cover;display:block}
+.t svg{width:52%;height:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.card .t{aspect-ratio:1/1;cursor:zoom-in;border:0;padding:0;width:100%}
+.info{padding:14px;display:flex;flex-direction:column;gap:2px;flex:1}
+.info h3{font-size:1.1rem}
+.info small{color:var(--muted)}
+.price{font-weight:600;margin-top:4px}
+.info .row{margin-top:auto;padding-top:10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.info a{font-weight:600;color:var(--gold)}
+.own-only{display:none}
+body.own .own-only{display:inline-block}
+.del{background:none;border:1.5px solid var(--bad);color:var(--bad);border-radius:999px;padding:3px 12px;font:500 .85rem "Work Sans",sans-serif;cursor:pointer}
+.tag{font-size:.75rem;background:var(--blush);color:var(--ink);border-radius:999px;padding:1px 9px;align-self:flex-start;margin-bottom:4px}
+#admin{background:var(--blush);border-radius:24px;padding:26px;margin:0 20px}
+#admin[hidden]{display:none}
+form{display:grid;gap:12px;max-width:520px}
+label{font-weight:500;font-size:.95rem}
+input,select{width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);font:inherit}
+#st{margin:10px 0 0;min-height:1.5em}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+dialog{border:0;border-radius:22px;padding:0;max-width:min(520px,92vw);width:100%;background:var(--surface);color:var(--ink)}
+dialog::backdrop{background:#000a}
+dialog .t{aspect-ratio:1/1}
+dialog .info{padding:18px}
+footer{padding:24px 0 36px;color:var(--muted);font-size:.9rem;text-align:center}
+@media (max-width:760px){.hero .cols,.contact{grid-template-columns:1fr}nav a{margin-left:12px}.hero svg{max-height:240px}}
+</style>
+<style id="pro">
+html{scroll-padding-top:76px}
+.bar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;padding-top:calc(10px + env(safe-area-inset-top,0px));background:color-mix(in srgb,var(--teal) 94%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fbf3f1;border-bottom:1px solid #ffffff22}
+.bar .logo{font-size:1.6rem;letter-spacing:.06em;background:linear-gradient(90deg,#f6d98a,#d9a441,#f6d98a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.bar nav{display:flex;align-items:center;gap:4px}
+.bar nav a{margin:0;padding:7px 13px;border-radius:999px;color:#fbf3f1;opacity:1}
+.bar nav a:hover{background:#ffffff1f}
+.bar nav a.call{background:var(--gold-soft);color:#2a1530;font-weight:600}
+.hero{background:radial-gradient(circle at 82% 18%,#1f7683 0,transparent 42%),linear-gradient(160deg,#0e3b43,#082a31);border-radius:0 0 48px 48px}
+.hero .cols{padding-top:44px;padding-bottom:64px}
+.hero h1{font-size:clamp(2.2rem,5.2vw,4rem)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.chips span{border:1px solid #f0c75e88;color:var(--gold-soft);border-radius:999px;padding:3px 13px;font-size:.88rem}
+.btn{box-shadow:0 6px 18px #0003;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.album,.card{transition:transform .2s,box-shadow .2s}
+.album:hover,.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #2a153026}
+.card .price{color:var(--gold);font-size:1.15rem}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feat div{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--gold-soft);border-radius:20px;padding:22px}
+.feat h3{font-size:1.2rem;margin-bottom:6px}
+.feat p{margin:0;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;padding:20px;border-radius:20px;background:var(--blush)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--teal);color:var(--gold-soft);font-weight:600;margin-bottom:10px}
+.steps b{display:block;font-family:"Bodoni Moda",Georgia,serif;font-size:1.15rem;font-weight:500}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.tools input{flex:1;min-width:180px}
+.tools select{width:auto}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;background:#1f9d55;color:#fff;font-weight:600;padding:12px 20px;border-radius:999px;text-decoration:none;box-shadow:0 8px 22px #0004}
+footer{background:var(--teal);color:#d9e7e8;text-align:left;padding:40px 0 28px;margin-top:20px;border-radius:40px 40px 0 0}
+footer .fc{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:26px}
+footer h3{color:var(--gold-soft);font-size:1.2rem;margin-bottom:8px}
+footer a{color:inherit;display:block;padding:2px 0}
+footer .cp{border-top:1px solid #ffffff22;margin-top:24px;padding-top:14px;font-size:.85rem;color:#a9c3c6}
+@media (max-width:760px){.feat,.steps,footer .fc{grid-template-columns:1fr}.bar nav a.opt{display:none}.bar{padding-left:14px;padding-right:14px}.hero{border-radius:0 0 32px 32px}}
+</style>
+<style id="lux">
+:root{--bg:#fffaf3;--surface:#fff;--ink:#2b1a1f;--muted:#76606a;--teal:#5a1228;--gold:#9a6b14;--gold-soft:#e6bf6b;--blush:#f6ebdb;--line:#ecdcc0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b0f13;--surface:#2a1a20;--ink:#f7ece4;--muted:#c3aab2;--teal:#3c0c1b;--gold:#e6bf6b;--blush:#33202a;--line:#4a2f38}}
+.ann{background:#2b0a14;color:#f1d9a0;font-size:.85rem;display:flex;justify-content:center;gap:22px;flex-wrap:wrap;padding:6px 14px}
+.ann a{color:inherit;text-decoration:none}
+.ann a:hover{text-decoration:underline}
+.hero{background:radial-gradient(circle at 80% 15%,#8a2340 0,transparent 45%),linear-gradient(160deg,#5a1228,#33091a)}
+.hero::after{content:"";display:block;height:3px;background:linear-gradient(90deg,transparent,#e6bf6b,transparent)}
+.hero p{color:#f0dcd6}
+.albums{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:26px 18px}
+.album{background:none;border:0;align-items:center;text-align:center}
+.album:hover{box-shadow:none}
+.album .t{width:100%;border-radius:50%;border:2px solid var(--gold-soft);box-shadow:0 0 0 5px var(--bg),0 0 0 6px var(--line)}
+.album b{padding:12px 0 0;font-size:1.15rem}
+.album small{padding:0 0 4px}
+.card{border-radius:6px}
+.card:hover{box-shadow:0 12px 28px #5a122822}
+.wbtn,.cbtn{display:inline-block;border-radius:999px;padding:6px 14px;font:600 .88rem "Work Sans",sans-serif;text-decoration:none;cursor:pointer}
+.wbtn{background:#1f9d55;color:#fff!important}
+.cbtn{background:none;border:1.5px solid var(--gold);color:var(--gold)!important}
+h2::after{content:"";display:block;width:56px;height:3px;background:var(--gold-soft);margin-top:10px}
+.connect{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:6px 0 28px}
+.connect a{display:flex;flex-direction:column;gap:2px;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--gold-soft);padding:16px;border-radius:6px;min-width:0}
+.connect a:hover{box-shadow:0 10px 24px #5a122822}
+.connect b{font-family:"Bodoni Moda",Georgia,serif;font-size:1.15rem;font-weight:500}
+.connect span{color:var(--muted);font-size:.9rem;overflow-wrap:anywhere}
+.fab2{right:auto;left:16px;background:var(--teal)}
+.plus{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:220px;border:2px dashed var(--gold-soft);background:var(--surface);color:var(--gold);font:600 1rem "Work Sans",sans-serif;cursor:pointer}
+.plus span{font-size:3.4rem;line-height:1}
+.sway{animation:none!important}
+.hr{display:flex;flex-direction:column;align-items:center}
+.heroimg{border-radius:200px 200px 24px 24px;overflow:hidden;border:3px solid var(--gold-soft);aspect-ratio:4/5;max-height:420px;width:min(100%,336px)}
+.heroimg[hidden]{display:none}
+.heroimg img{width:100%;height:100%;object-fit:cover;display:block}
+main{display:flex;flex-direction:column}
+#admin{order:9;margin:20px auto;max-width:1040px;width:calc(100% - 40px)}
+.bar nav a.addb{background:#ffffff1f}
+footer{background:#2b0a14}
+@media (max-width:760px){.connect{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="earring" viewBox="0 0 100 130"><path d="M50 4v14" stroke="currentColor" stroke-width="4" fill="none"></path><circle cx="50" cy="24" r="9" fill="currentColor"></circle><path d="M18 62a32 32 0 0 1 64 0z" fill="currentColor"></path><path d="M50 62v8M30 62l-3 12M70 62l3 12" stroke="currentColor" stroke-width="3"></path><circle cx="50" cy="82" r="6" fill="currentColor"></circle><circle cx="27" cy="82" r="5" fill="currentColor"></circle><circle cx="73" cy="82" r="5" fill="currentColor"></circle><circle cx="38" cy="100" r="4" fill="currentColor"></circle><circle cx="62" cy="100" r="4" fill="currentColor"></circle><circle cx="50" cy="108" r="5" fill="currentColor"></circle></symbol>
+<symbol id="necklace" viewBox="0 0 120 120"><path d="M10 14C14 70 106 70 110 14" stroke="currentColor" stroke-width="3" fill="none"></path><path d="M30 52q30 40 60 0" stroke="currentColor" stroke-width="3" fill="none"></path><circle cx="60" cy="86" r="11" fill="currentColor"></circle><circle cx="34" cy="68" r="6" fill="currentColor"></circle><circle cx="86" cy="68" r="6" fill="currentColor"></circle><circle cx="46" cy="79" r="5" fill="currentColor"></circle><circle cx="74" cy="79" r="5" fill="currentColor"></circle><circle cx="60" cy="108" r="5" fill="currentColor"></circle></symbol>
+<symbol id="bangle" viewBox="0 0 120 120"><circle cx="60" cy="60" r="44" stroke="currentColor" stroke-width="10" fill="none"></circle><circle cx="60" cy="60" r="31" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="3 6"></circle><circle cx="60" cy="16" r="7" fill="currentColor"></circle><circle cx="104" cy="60" r="5" fill="currentColor"></circle><circle cx="16" cy="60" r="5" fill="currentColor"></circle></symbol>
+<symbol id="ring" viewBox="0 0 120 120"><circle cx="60" cy="74" r="32" stroke="currentColor" stroke-width="8" fill="none"></circle><path d="M42 40l18-26 18 26-18 12z" fill="currentColor"></path></symbol>
+</defs>
+</svg>
+
+<div class="ann"><a href="tel:+918824260340">Call 88242 60340</a><a id="wa4" href="#" target="_blank" rel="noopener">WhatsApp us</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Radha+Nilayam+Gayatri+Nagar+Borabanda+Hyderabad+500114" target="_blank" rel="noopener">Borabanda, Hyderabad</a></div>
+<div class="bar"><a class="logo" href="#" data-go="top">GINEVA</a><nav><a href="#albums" data-go="albums">Albums</a><a class="opt" href="#how" data-go="how">How to order</a><a class="opt" href="#visit" data-go="visit">Contact</a><a class="own-only addb" href="#admin" data-go="admin">Add designs</a><a class="call" href="tel:+918824260340">Call now</a></nav></div>
+<div class="hero">
+<div class="wrap">
+<div class="cols">
+<div>
+<div class="chips"><span>1 gram gold</span><span>Wedding jewellery</span><span>Hyderabad</span></div>
+<h1>1 gram gold jewellery that <em>shines</em> on your big day</h1>
+<p>Gineva Fashion Jewellery, Hyderabad. Wedding sets, necklaces, earrings, rings and chains in a rich gold finish.</p>
+<a class="btn" href="#albums" data-go="albums">Browse albums</a><a class="btn alt" id="wa1" href="#" target="_blank" rel="noopener">WhatsApp us</a><a class="btn alt" href="tel:+918824260340">Call us</a>
+</div>
+<div class="hr"><svg id="hsv" viewBox="0 0 400 380" role="img" aria-label="Illustration of a jhumka earring and necklace" style="color:var(--gold-soft)">
+<circle cx="200" cy="190" r="170" fill="#ffffff10"></circle>
+<g class="sway"><use href="#earring" x="140" y="40" width="120" height="156"></use></g>
+<use href="#necklace" x="110" y="215" width="180" height="150"></use>
+</svg>
+<div class="heroimg" id="himg" hidden=""><img id="himgi" alt="Gineva jewellery"></div>
+<button class="cbtn own-only" id="hbtn" type="button" style="margin-top:10px;color:var(--gold-soft)!important;border-color:var(--gold-soft)">Change banner photo</button><input id="hf" type="file" accept="image/*" hidden=""></div>
+</div>
+</div>
+</div>
+
+<main>
+<section id="admin" hidden="">
+<h2>Add to your collection</h2>
+<p class="sub">Only you can see this. Pick photos, choose an album, and they appear on the site for every customer.</p>
+<form id="af">
+<div><label for="fi">Photos (you can choose many)</label><input id="fi" type="file" accept="image/*" multiple=""></div>
+<div><label for="nm">Name (optional, one photo only)</label><input id="nm" placeholder="e.g. Kundan choker set"></div>
+<div><label for="al">Album</label><select id="al"></select></div>
+<div id="nw" hidden=""><label for="nc">New album name</label><input id="nc" placeholder="e.g. Maang tikka"></div>
+<div><label for="pr">Price in ₹ (optional)</label><input id="pr" type="number" min="0" inputmode="numeric"></div>
+<button class="btn" type="submit">Add to site</button>
+</form>
+<p id="st" role="status"></p>
+<p class="sub">The first 8 designs are samples. <button class="del" id="clr" type="button">Remove all samples</button> <button class="del" id="ex" type="button" style="color:var(--ink);border-color:var(--line)">Leave owner mode</button></p>
+</section>
+
+<section id="albums"><div class="wrap">
+<h2>Our albums</h2>
+<p class="sub">Tap an album to open it.</p>
+<div class="albums" id="alb"></div>
+</div></section>
+
+<section id="items" style="padding-top:0"><div class="wrap">
+<a class="back" id="bk" href="#">← All albums</a>
+<h2 id="it">All designs</h2>
+<p class="sub" id="is"></p>
+<div class="own-only am" id="am"><input id="rn" aria-label="Album name"><button class="btn" id="rb" type="button">Rename album</button><button class="del" id="db" type="button">Delete album</button></div>
+<div class="tools"><input id="q" type="search" placeholder="Search designs" aria-label="Search designs"><select id="so" aria-label="Sort designs"><option value="new">Newest first</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option></select></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="why"><div class="wrap"><h2>Why Gineva</h2><p class="sub">Jewellery for weddings and every occasion, from Hyderabad.</p>
+<div class="feat"><div><h3>1 gram gold finish</h3><p>A rich gold look that suits weddings, festivals and everyday wear.</p></div><div><h3>Wedding specialists</h3><p>Bridal necklaces, earrings and bangles chosen to go together.</p></div><div><h3>New designs added</h3><p>Fresh designs are added to the albums regularly. Scan the code again to see them.</p></div></div></div></section>
+<section id="how" style="padding-top:8px"><div class="wrap"><h2>How to order</h2><p class="sub">Three easy steps, all on your phone.</p>
+<ol class="steps"><li><b>Pick a design</b>Open an album and tap a photo to see it bigger.</li><li><b>Message us</b>Tap “Order on WhatsApp”. The design name is filled in for you.</li><li><b>Confirm details</b>We reply with details and payment options.</li></ol></div></section>
+<section id="visit" style="padding-top:8px"><div class="wrap">
+<h2>Visit &amp; contact</h2><p class="sub">We are happy to help. Call, message or visit us.</p>
+<div class="connect"><a href="tel:+918824260340"><b>Call</b><span>88242 60340</span></a><a id="wa5" href="#" target="_blank" rel="noopener"><b>WhatsApp</b><span>Chat with us</span></a><a href="mailto:ginevafashionjewellery@gmail.com"><b>Email</b><span>ginevafashionjewellery@gmail.com</span></a><a href="https://www.google.com/maps/search/?api=1&amp;query=Radha+Nilayam+Gayatri+Nagar+Borabanda+Hyderabad+500114" target="_blank" rel="noopener"><b>Directions</b><span>Borabanda, Hyderabad</span></a></div>
+<div class="contact">
+<div>
+<h2>Visit or order</h2>
+<p class="sub">Tell us what you are looking for and we will reply on WhatsApp with photos, details and payment options.</p>
+<form id="cf"><div><label for="cn">Your name</label><input id="cn" required="" autocomplete="name"></div><div><label for="cm">What are you looking for?</label><input id="cm" placeholder="e.g. bridal necklace set in gold finish"></div><button class="btn" type="submit" style="background:var(--teal);color:#fbf3f1">Send on WhatsApp</button></form>
+<p><a id="wa2" href="#" target="_blank" rel="noopener" style="font-weight:600;color:var(--gold)">Or open a WhatsApp chat</a></p>
+</div>
+<div>
+<p><strong>Gineva Fashion Jewellery</strong><br>Radha Nilayam, 14.1.90/169B&amp;170, Gayatri Nagar, Parvathi Nagar, Borabanda, Hyderabad, Telangana 500114<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Radha+Nilayam+Gayatri+Nagar+Borabanda+Hyderabad+500114" target="_blank" rel="noopener">Open in Maps</a></p>
+<p><strong>Call:</strong> <a href="tel:+918824260340">88242 60340</a> (Gautam Choyal)<br><strong>Email:</strong> <a href="mailto:ginevafashionjewellery@gmail.com">ginevafashionjewellery@gmail.com</a><br><strong>Instagram:</strong> <a href="https://www.instagram.com/ginevafashionjewellery/" target="_blank" rel="noopener">@ginevafashionjewellery</a>, <a href="https://www.instagram.com/ginevajewellery/" target="_blank" rel="noopener">@ginevajewellery</a></p>
+</div>
+</div>
+</div></section>
+</main>
+
+<dialog id="dg"></dialog>
+<a class="fab fab2" href="tel:+918824260340">Call</a>
+<a class="fab" id="wa3" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+<footer><div class="wrap"><div class="fc"><div><h3>Gineva Fashion Jewellery</h3><p>1 gram gold and wedding jewellery.<br>Radha Nilayam, 14.1.90/169B&amp;170, Gayatri Nagar, Parvathi Nagar, Borabanda, Hyderabad, Telangana 500114</p></div><div><h3>Explore</h3><a href="#" data-go="top">Home</a><a href="#albums" data-go="albums">Albums</a><a href="#how" data-go="how">How to order</a><a href="#visit" data-go="visit">Contact</a></div><div><h3>Contact</h3><a href="tel:+918824260340">88242 60340</a><a href="mailto:ginevafashionjewellery@gmail.com">ginevafashionjewellery@gmail.com</a><a href="https://www.instagram.com/ginevafashionjewellery/" target="_blank" rel="noopener">Instagram</a></div></div><div class="cp">© Gineva Fashion Jewellery. Owner: Gautam Choyal.</div></div></footer>
+
+<script type="application/json" id="d">{"cats":["Earrings","Necklaces","Rings","Chains","Bangles","Bridal sets"],"items":[]}</script>
+<script>
+var SHELL=document.documentElement.outerHTML;
+var ART="https://claude.ai/artifact/5u91Z1EAosoarKtWcpBbSK";var WA="918824260340",S=JSON.parse(document.getElementById("d").textContent),sel=null,own=false;
+var PAL=[["#0e3b43","#f0c75e"],["#7a1f3d","#f6d98a"],["#2a1530","#d9d9e3"],["#b4412c","#ffe3a3"],["#1f4e79","#f4f7ff"],["#4a2c0a","#f0c75e"]];
+var $=function(i){return document.getElementById(i)};
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return"&#"+c.charCodeAt(0)+";"})}
+function slug(c){return c.toLowerCase().replace(/[^a-z0-9]+/g,"-")}
+function icon(c){return{Earrings:"earring",Rings:"ring",Bangles:"bangle"}[c]||"necklace"}
+function tile(it){
+ if(it.img)return'<img src="'+it.img+'" alt="'+esc(it.n)+'" loading="lazy">';
+ var k=0,i;for(i=0;i<it.id.length;i++)k+=it.id.charCodeAt(i);
+ var p=PAL[k%PAL.length],ic=icon(it.c);
+ return'<div class="t" style="background:'+p[0]+';color:'+p[1]+';width:100%;height:100%"><svg viewBox="'+(ic=="earring"?"0 0 100 130":"0 0 120 120")+'" role="img" aria-label="'+esc(it.n)+'"><use href="#'+ic+'"/></svg></div>';
+}
+function price(it){return it.p?"₹"+Number(it.p).toLocaleString("en-IN"):"Ask for price"}
+function wa(txt){return"https://wa.me/"+WA+"?text="+encodeURIComponent(txt)}
+function cats(){var a=S.cats.slice();S.items.forEach(function(i){if(a.indexOf(i.c)<0)a.push(i.c)});return a}
+function render(){
+ var h='',all=S.items,tot=all.length;if(S.hero){$("himgi").src=S.hero;$("himg").hidden=false;$("hsv").style.display="none"}
+ 
+ cats().forEach(function(c){
+  var m=all.filter(function(i){return i.c==c});
+  if(!m.length&&!own)return;
+  var cv=m[0]||{id:c,n:c,c:c};
+  h+='<a class="album" href="#'+slug(c)+'" data-album="'+esc(c)+'"><span class="t" style="aspect-ratio:1/1;display:block">'+tile(cv)+'</span><b>'+esc(c)+'</b><small>'+m.length+' design'+(m.length==1?"":"s")+'</small></a>';
+ });
+ $("alb").innerHTML=h||'<p class="sub" style="grid-column:1/-1">New designs are being added. Message us on WhatsApp to see the latest collection.</p>';
+ var q=($("q").value||"").toLowerCase(),so=$("so").value;
+ var list=sel===null?[]:all.filter(function(i){return i.c==sel&&(!q||i.n.toLowerCase().indexOf(q)>=0)});
+ if(so=="lo")list.sort(function(a,b){return(a.p||1e9)-(b.p||1e9)});
+ if(so=="hi")list.sort(function(a,b){return(b.p||0)-(a.p||0)});
+ $("it").textContent=sel===null?"All designs":sel;$("rn").value=sel||"";
+ $("is").textContent=list.length?list.length+" design"+(list.length==1?"":"s")+(sel!==null?" in this album":""):"Nothing here yet. Please check back soon, or message us on WhatsApp.";
+ $("grid").innerHTML=(own&&sel!==null?'<button class="card plus" data-add="1" aria-label="Add a new design to this album"><span>+</span>Add new design</button>':'')+list.map(function(it){
+  return'<article class="card">'+(it.s&&own?'':'')+'<button class="t" data-open="'+esc(it.id)+'" aria-label="View '+esc(it.n)+'" style="aspect-ratio:1/1">'+tile(it)+'</button><div class="info">'+(it.s&&own?'<span class="tag">Sample</span>':'')+'<h3>'+esc(it.n)+'</h3><small>'+esc(it.c)+'</small><div class="price">'+price(it)+'</div><div class="row"><a href="'+wa("Hi, I’m interested in: "+it.n+" ("+it.c+")"+(it.p?" – ₹"+it.p:""))+'" target="_blank" rel="noopener" class="wbtn">WhatsApp</a><a class="cbtn" href="tel:+918824260340">Call</a><button class="del own-only" data-edit="'+esc(it.id)+'" style="color:var(--ink);border-color:var(--line)">Edit</button><button class="del own-only" data-del="'+esc(it.id)+'">Delete</button></div></div></article>';
+ }).join("");
+ var o=$("al");if(own){o.innerHTML=cats().map(function(c){return"<option>"+esc(c)+"</option>"}).join("")+'<option value="__new">+ New album…</option>';if(sel!==null)o.value=sel}
+}
+function pick(c){sel=c;$("q").value="";document.body.classList.toggle("alb",c!==null);document.title=c?c+" – Gineva Fashion Jewellery":"Gineva Fashion Jewellery";render();try{location.hash=c?slug(c):"albums"}catch(e){}window.scrollTo(0,0)}
+document.addEventListener("click",function(e){
+ var t=e.target.closest("[data-album],[data-open],[data-del],[data-edit],[data-add]");if(!t)return;
+ if(t.hasAttribute("data-album")){e.preventDefault();return pick(t.dataset.album||null)}
+ if(t.dataset.open){var it=S.items.filter(function(i){return i.id==t.dataset.open})[0];if(!it)return;
+  var d=$("dg");d.innerHTML='<div class="t" style="aspect-ratio:1/1">'+tile(it)+'</div><div class="info"><h3>'+esc(it.n)+'</h3><small>'+esc(it.c)+'</small><div class="price">'+price(it)+'</div><div class="row"><a class="btn" style="color:#2a1530" href="'+wa("Hi, I’m interested in: "+it.n+" ("+it.c+")")+'" target="_blank" rel="noopener">Order on WhatsApp</a><button class="del" style="color:var(--ink);border-color:var(--line)" onclick="this.closest(\'dialog\').close()">Close</button></div></div>';
+  d.querySelector(".row").insertAdjacentHTML("beforeend",'<a class="cbtn" href="tel:+918824260340">Call</a><a class="cbtn" href="mailto:ginevafashionjewellery@gmail.com?subject='+encodeURIComponent("Enquiry: "+it.n)+'">Email</a><button class="cbtn" type="button" onclick="shareIt(this,\''+it.id+'\')">Share</button>');
+  d.showModal();return}
+ if(t.dataset.add){$("dg").innerHTML='<div class="info" style="padding:20px;gap:10px"><h3>Add to '+esc(sel)+'</h3><label for="af1">Photos (you can choose many)</label><input id="af1" type="file" accept="image/*" multiple><label for="an">Name (optional, one photo only)</label><input id="an"><label for="ap">Price in ₹ (optional)</label><input id="ap" type="number" min="0" inputmode="numeric"><p id="ast" role="status" style="margin:0;min-height:1.4em"></p><div class="row"><button class="btn" onclick="addHere()">Add to album</button><button class="del" style="color:var(--ink);border-color:var(--line)" onclick="$(\'dg\').close()">Cancel</button></div></div>';$("dg").showModal();return}
+ if(t.dataset.edit){var x=S.items.filter(function(i){return i.id==t.dataset.edit})[0];if(!x)return;
+  $("dg").innerHTML='<div class="info" style="padding:20px;gap:10px"><h3>Edit design</h3><label for="en">Name</label><input id="en" value="'+esc(x.n)+'"><label for="ep">Price in ₹</label><input id="ep" type="number" min="0" value="'+(x.p||"")+'"><label for="ea">Album</label><select id="ea">'+cats().map(function(c){return"<option"+(c==x.c?" selected":"")+">"+esc(c)+"</option>"}).join("")+'</select><div class="row"><button class="btn" onclick="saveEdit(\''+x.id+'\')">Save changes</button><button class="del" style="color:var(--ink);border-color:var(--line)" onclick="$(\'dg\').close()">Cancel</button></div></div>';
+  $("dg").showModal();return}
+ if(t.dataset.del){
+  if(!t.dataset.arm){t.dataset.arm=1;t.textContent="Tap again to delete";setTimeout(function(){delete t.dataset.arm;t.textContent="Delete"},3000);return}
+  S.items=S.items.filter(function(i){return i.id!=t.dataset.del});render();save("Deleted. Saving…");
+ }
+});
+$("dg").addEventListener("click",function(e){if(e.target===this)this.close()});
+function say(m){$("st").textContent=m;if(sel!==null)$("is").textContent=m}
+function save(msg){
+ say(msg||"Saving…");
+ return claude.use("artifact").then(function(a){
+  if(!a){say("Saving is not available in this view. Open the page from your Claude account.");return}
+  var d=new DOMParser().parseFromString(SHELL,"text/html");
+  d.getElementById("d").textContent=JSON.stringify(S).replace(/</g,"\\u003c");
+  var html="<!DOCTYPE html>\n"+d.documentElement.outerHTML;
+  if(html.length>15e6){say("The page is too big. Delete some designs first.");return}
+  return a.publish(html);
+ }).catch(function(e){say("Could not save: "+((e&&(e.code||e.message))||"unknown error"))});
+}
+function shrink(f){return new Promise(function(ok,no){
+ var r=new FileReader();r.onerror=no;r.onload=function(){
+  var im=new Image();im.onerror=no;im.onload=function(){
+   var m=900,s=Math.min(1,m/Math.max(im.width,im.height)),c=document.createElement("canvas");
+   c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);
+   c.getContext("2d").drawImage(im,0,0,c.width,c.height);ok(c.toDataURL("image/jpeg",.72));
+  };im.src=r.result;
+ };r.readAsDataURL(f)})}
+$("al").addEventListener("change",function(){$("nw").hidden=this.value!="__new"});
+$("af").addEventListener("submit",function(e){
+ e.preventDefault();
+ var fs=Array.prototype.slice.call($("fi").files);
+ if(!fs.length)return say("Choose at least one photo.");
+ var c=$("al").value;if(c=="__new")c=$("nc").value.trim();
+ if(!c)return say("Type a name for the new album.");
+ var nm=$("nm").value.trim(),pr=$("pr").value?Number($("pr").value):null;
+ say("Preparing photos…");
+ Promise.all(fs.map(shrink)).then(function(imgs){
+  imgs.forEach(function(img,k){
+   S.items.unshift({id:"i"+Date.now()+k,n:(fs.length==1&&nm)?nm:fs[k].name.replace(/\.[^.]+$/,"").replace(/[_-]+/g," "),c:c,p:pr,img:img});
+  });
+  if(S.cats.indexOf(c)<0)S.cats.push(c);
+  return save("Saving "+imgs.length+" design"+(imgs.length==1?"":"s")+"…");
+ }).catch(function(){say("One of the photos could not be read. Try another photo.")});
+});
+$("hbtn").addEventListener("click",function(){$("hf").click()});
+$("hf").addEventListener("change",function(){var f=this.files[0];if(!f)return;say("Preparing banner photo…");shrink(f).then(function(d){S.hero=d;render();save("Saving banner photo…")}).catch(function(){say("That photo could not be read. Try another photo.")})});
+function addHere(){var fs=Array.prototype.slice.call($("af1").files),st=$("ast");
+ if(!fs.length){st.textContent="Choose at least one photo.";return}
+ var nm=$("an").value.trim(),pr=$("ap").value?Number($("ap").value):null,c=sel;st.textContent="Preparing photos…";
+ Promise.all(fs.map(shrink)).then(function(imgs){imgs.forEach(function(img,k){S.items.unshift({id:"i"+Date.now()+k,n:(fs.length==1&&nm)?nm:fs[k].name.replace(/\.[^.]+$/,"").replace(/[_-]+/g," "),c:c,p:pr,img:img})});
+  $("dg").close();render();save("Saving "+imgs.length+" design"+(imgs.length==1?"":"s")+"…")}).catch(function(){st.textContent="One of the photos could not be read. Try another photo."})}
+function saveEdit(id){var x=S.items.filter(function(i){return i.id==id})[0];if(!x)return;x.n=$("en").value.trim()||x.n;x.p=$("ep").value?Number($("ep").value):null;x.c=$("ea").value;x.s=0;$("dg").close();render();save("Changes made. Saving…")}
+$("rb").addEventListener("click",function(){var n=$("rn").value.trim();if(!n||sel===null||n==sel)return;
+ S.items.forEach(function(i){if(i.c==sel)i.c=n});S.cats=S.cats.map(function(c){return c==sel?n:c}).filter(function(c,i,a){return a.indexOf(c)==i});sel=n;render();save("Album renamed. Saving…")});
+$("db").addEventListener("click",function(){var b=this;if(!b.dataset.arm){b.dataset.arm=1;b.textContent="Tap again: delete album and its designs";setTimeout(function(){delete b.dataset.arm;b.textContent="Delete album"},4000);return}
+ var c=sel;S.items=S.items.filter(function(i){return i.c!=c});S.cats=S.cats.filter(function(x){return x!=c});pick(null);save("Album deleted. Saving…")});
+$("ex").addEventListener("click",function(){try{localStorage.setItem("gOff","1")}catch(e){}own=false;document.body.classList.remove("own");$("admin").hidden=true;render()});
+$("clr").addEventListener("click",function(){
+ if(!this.dataset.arm){this.dataset.arm=1;this.textContent="Tap again to remove samples";var b=this;setTimeout(function(){delete b.dataset.arm;b.textContent="Remove all samples"},3000);return}
+ S.items=S.items.filter(function(i){return!i.s});render();save("Samples removed. Saving…");
+});
+$("wa1").href=wa("Hi Gineva, I’d like to see your collection.");$("wa2").href=wa("Hi Gineva, I’d like to order.");
+$("wa3").href=wa("Hi Gineva, I’d like to see your collection.");$("wa4").href=$("wa3").href;$("wa5").href=$("wa3").href;
+function shareIt(b,id){var it=S.items.filter(function(i){return i.id==id})[0];if(!it)return;var u=ART+"#"+slug(it.c),t="Gineva Fashion Jewellery – "+it.n+": ";
+ if(navigator.share){navigator.share({title:"Gineva Fashion Jewellery",text:it.n,url:u}).catch(function(){});return}
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t+u).then(function(){b.textContent="Link copied"},function(){window.open(wa(t+u),"_blank")});return}
+ window.open(wa(t+u),"_blank")}
+$("q").addEventListener("input",function(){render()});
+$("so").addEventListener("change",function(){render()});
+$("cf").addEventListener("submit",function(e){e.preventDefault();window.open(wa("Hi Gineva, I’m "+$("cn").value+". "+($("cm").value||"I’d like to know more about your collection.")),"_blank")});
+document.addEventListener("click",function(e){var g=e.target.closest("[data-go]");if(!g)return;e.preventDefault();var to=g.dataset.go;
+ if(sel!==null&&(to=="albums"||to=="top"||to=="admin"))pick(null);
+ if(to=="top"){window.scrollTo({top:0,behavior:"smooth"});return}
+ setTimeout(function(){var el=$(to);if(el)el.scrollIntoView({behavior:"smooth"})},40)});
+var hs=(location.hash||"").slice(1);if(hs&&hs!="all")cats().forEach(function(c){if(slug(c)==hs)sel=c});
+$("bk").href="#albums";$("bk").setAttribute("data-album","");
+if(sel!==null){document.body.classList.add("alb");document.title=sel+" – Gineva Fashion Jewellery"}
+render();
+var wantOwn=true;try{if(hs=="owner")localStorage.removeItem("gOff");if(localStorage.getItem("gOff")=="1")wantOwn=false}catch(e){}
+if(wantOwn&&typeof claude!=="undefined")claude.use("user").then(function(u){
+ if(u&&u.canEdit()){own=true;document.body.classList.add("own");$("admin").hidden=(hs!="owner");render()}
+}).catch(function(){});
+</script></body></html>
